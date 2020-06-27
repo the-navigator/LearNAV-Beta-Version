@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CA277AA2-1BED-4ECE-B828-2FC943FCF812}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LearNAV</RootNamespace>
+    <AssemblyName>LearNAV</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>logo-ico.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+    <WarningLevel>2</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\..\Jureen's Files\The Navigator\The Navigator\The Navigator\bin\Debug\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetZip">
+      <HintPath>..\packages\DotNetZip.1.13.8\lib\net40\DotNetZip.dll</HintPath>
+    </Reference>
+    <Reference Include="LearNAV Engine">
+      <HintPath>..\..\LearNAV Engine\LearNAV Engine\bin\Debug\LearNAV Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialSkin">
+      <HintPath>..\..\..\..\Jureen's Files\The Navigator\The Navigator\The Navigator\bin\Debug\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework">
+      <HintPath>..\..\..\..\Jureen's Files\The Navigator\The Navigator\The Navigator\bin\Debug\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Advance_Search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Advance_Search.Designer.cs">
+      <DependentUpon>Advance_Search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Extract.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Extract.Designer.cs">
+      <DependentUpon>Extract.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home_Window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home_Window.Designer.cs">
+      <DependentUpon>Home_Window.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loading_screen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loading_screen.Designer.cs">
+      <DependentUpon>loading_screen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Log-In Window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Log-In Window.Designer.cs">
+      <DependentUpon>Log-In Window.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resource_Extract_Tool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resource_Extract_Tool.Designer.cs">
+      <DependentUpon>Resource_Extract_Tool.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resource_Viewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resource_Viewer.Designer.cs">
+      <DependentUpon>Resource_Viewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserResources.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserResources.Designer.cs">
+      <DependentUpon>UserResources.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Advance_Search.resx">
+      <DependentUpon>Advance_Search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Extract.resx">
+      <DependentUpon>Extract.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home_Window.resx">
+      <DependentUpon>Home_Window.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loading_screen.resx">
+      <DependentUpon>loading_screen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Log-In Window.resx">
+      <DependentUpon>Log-In Window.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Resource_Extract_Tool.resx">
+      <DependentUpon>Resource_Extract_Tool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource_Viewer.resx">
+      <DependentUpon>Resource_Viewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserResources.resx">
+      <DependentUpon>UserResources.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Log-In.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\main.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\main1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\main2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Resource Viewer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\main3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\main 22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loading_screen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\advance_search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\advance_search1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SPLASH1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="logo-ico.ico" />
+    <None Include="Resources\settings1.png" />
+    <None Include="Resources\menu.png" />
+    <None Include="Resources\settings.png" />
+    <None Include="Resources\question.png" />
+    <None Include="Resources\open-book1.png" />
+    <None Include="Resources\open-book.png" />
+    <None Include="Resources\content-writing %281%29.png" />
+    <None Include="Resources\logz.png" />
+    <None Include="Resources\logo.png" />
+    <None Include="Resources\4ff5fbeb-18cc-47c5-8f2b-767907b87ee6.png" />
+    <None Include="Resources\greetfin.png" />
+    <None Include="Resources\SPLASH11.png" />
+    <None Include="Resources\maiiin.png" />
+    <None Include="Resources\main 3.png" />
+    <None Include="Resources\resource extract tool.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,24 @@
+C:\Users\hp\AppData\Local\Temporary Projects\LearNAV\bin\Debug\LearNAV.exe.config
+C:\Users\hp\Documents\Visual Studio 2012\Projects\LearNAV\LearNAV\bin\Debug\LearNAV.exe.config
+C:\Users\hp\Documents\Visual Studio 2012\Projects\LearNAV\LearNAV\bin\Debug\LearNAV.exe
+C:\Users\hp\Documents\Visual Studio 2012\Projects\LearNAV\LearNAV\bin\Debug\LearNAV.pdb
+C:\Users\hp\Documents\Visual Studio 2012\Projects\LearNAV\LearNAV\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\hp\Documents\Visual Studio 2012\Projects\LearNAV\LearNAV\obj\Debug\LearNAV.Properties.Resources.resources
+C:\Users\hp\Documents\Visual Studio 2012\Projects\LearNAV\LearNAV\obj\Debug\LearNAV.csproj.GenerateResource.Cache
+C:\Users\hp\Documents\Visual Studio 2012\Projects\LearNAV\LearNAV\obj\Debug\LearNAV.exe
+C:\Users\hp\Documents\Visual Studio 2012\Projects\LearNAV\LearNAV\obj\Debug\LearNAV.pdb
+C:\Users\hp\Documents\Visual Studio 2012\Projects\LearNAV\LearNAV\obj\Debug\LearNAV.LogIn_Window.resources
+C:\Users\hp\Documents\Visual Studio 2012\Projects\LearNAV\LearNAV\obj\Debug\LearNAV.Home_Window.resources
+C:\Users\hp\Documents\Visual Studio 2012\Projects\LearNAV\LearNAV\obj\Debug\LearNAV.Resource_Viewer.resources
+C:\Users\hp\Documents\Visual Studio 2012\Projects\LearNAV\LearNAV\bin\Debug\MaterialSkin.dll
+C:\Users\hp\Documents\Visual Studio 2012\Projects\LearNAV\LearNAV\obj\Debug\LearNAV.Advance_Search.resources
+C:\Users\hp\Documents\Visual Studio 2012\Projects\LearNAV\LearNAV\bin\Debug\DotNetZip.dll
+C:\Users\hp\Documents\Visual Studio 2012\Projects\LearNAV\LearNAV\bin\Debug\LearNAV Engine.dll
+C:\Users\hp\Documents\Visual Studio 2012\Projects\LearNAV\LearNAV\bin\Debug\DotNetZip.pdb
+C:\Users\hp\Documents\Visual Studio 2012\Projects\LearNAV\LearNAV\bin\Debug\DotNetZip.xml
+C:\Users\hp\Documents\Visual Studio 2012\Projects\LearNAV\LearNAV\bin\Debug\LearNAV Engine.pdb
+C:\Users\hp\Documents\Visual Studio 2012\Projects\LearNAV\LearNAV\obj\Debug\LearNAV.Initialization.resources
+C:\Users\hp\Documents\Visual Studio 2012\Projects\LearNAV\LearNAV\obj\Debug\LearNAV.Resource_Extract_Tool.resources
+C:\Users\hp\Documents\Visual Studio 2012\Projects\LearNAV\LearNAV\obj\Debug\LearNAV.UserResources.resources
+C:\Users\hp\Documents\Visual Studio 2012\Projects\LearNAV\LearNAV\bin\Debug\MetroFramework.dll
+C:\Users\hp\Documents\Visual Studio 2012\Projects\LearNAV\LearNAV\obj\Debug\LearNAV.Extract.resources
