@@ -49,6 +49,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btn_acs = new MaterialSkin.Controls.MaterialFlatButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -174,7 +175,7 @@
             this.bunifuFlatButton2.IconVisible = true;
             this.bunifuFlatButton2.IconZoom = 90D;
             this.bunifuFlatButton2.IsTab = false;
-            this.bunifuFlatButton2.Location = new System.Drawing.Point(646, 580);
+            this.bunifuFlatButton2.Location = new System.Drawing.Point(322, 278);
             this.bunifuFlatButton2.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.bunifuFlatButton2.Name = "bunifuFlatButton2";
             this.bunifuFlatButton2.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(201)))), ((int)(((byte)(170)))));
@@ -187,6 +188,7 @@
             this.bunifuFlatButton2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuFlatButton2.Textcolor = System.Drawing.Color.White;
             this.bunifuFlatButton2.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuFlatButton2.Visible = false;
             this.bunifuFlatButton2.Click += new System.EventHandler(this.bunifuFlatButton2_Click);
             // 
             // label2
@@ -376,11 +378,30 @@
             this.pictureBox2.TabIndex = 19;
             this.pictureBox2.TabStop = false;
             // 
+            // btn_acs
+            // 
+            this.btn_acs.AutoSize = true;
+            this.btn_acs.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn_acs.Depth = 0;
+            this.btn_acs.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_acs.Icon = null;
+            this.btn_acs.Location = new System.Drawing.Point(685, 580);
+            this.btn_acs.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btn_acs.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btn_acs.Name = "btn_acs";
+            this.btn_acs.Primary = false;
+            this.btn_acs.Size = new System.Drawing.Size(144, 36);
+            this.btn_acs.TabIndex = 26;
+            this.btn_acs.Text = "Access Resource";
+            this.btn_acs.UseVisualStyleBackColor = true;
+            this.btn_acs.Click += new System.EventHandler(this.btn_acs_Click);
+            // 
             // Home_Window
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(842, 634);
+            this.Controls.Add(this.btn_acs);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox3);
@@ -390,8 +411,8 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.all_cnt);
             this.Controls.Add(this.current_cnt);
-            this.Controls.Add(this.bunifuFlatButton1);
             this.Controls.Add(this.bunifuFlatButton2);
+            this.Controls.Add(this.bunifuFlatButton1);
             this.Controls.Add(this.bunifuFlatButton3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.search_string_txtbox);
@@ -435,6 +456,7 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox4;
+        private MaterialSkin.Controls.MaterialFlatButton btn_acs;
 
     }
 }
