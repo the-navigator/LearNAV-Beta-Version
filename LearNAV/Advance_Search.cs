@@ -33,38 +33,7 @@ namespace LearNAV
 
             }
         }
-        /*
-             private void Load_Data(string comtext)
-             {
-                  results_lv.Items.Clear();
-                        comn.Connection = db_cn;
-                          comn.CommandText = comtext;
-                     if (db_cn.State == ConnectionState.Open)
-                    {
-                        reader = comn.ExecuteReader();
-                        while (reader.Read())
-                        {
-
-
-
-                            ListViewItem dt = new ListViewItem();
-                            string search_var;
-
-
-                            dt.Text = reader.GetValue(0).ToString(); //first column (ID)
-                            search_var = reader.GetValue(1).ToString();
-
-                            dt.SubItems.Add(reader.GetValue(1).ToString()); //second column (Name)
-                            dt.SubItems.Add(reader.GetValue(3).ToString()); //thir column  (Author)
-                            dt.SubItems.Add(reader.GetValue(5).ToString()); //thir column  (Tags)
-                           results_lv.Items.Add(dt);
-                         //   current_cnt.Text = search_results.Items.Count.ToString();
-
-                        }
-                    
-                      }
-             }
-        */
+       
         private void btn_search_ad_Click(object sender, EventArgs e)
         {
         }
@@ -148,16 +117,6 @@ namespace LearNAV
 
             }
         }
-
-
-
-
-
-
-
-
-
-
         private void display_data()
         {
 
@@ -178,7 +137,7 @@ namespace LearNAV
             //
             if (type == 0)
             {
-                MessageBox.Show("Please select a search category", "Error",
+                MessageBox.Show("Please select search category", "Error",
                     MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
             else
@@ -191,21 +150,21 @@ namespace LearNAV
         private void search_type()
         {
 
-            AdvanceSearching a = new AdvanceSearching();
+            AdvanceSearching LNEngine_AdvanceSearch = new AdvanceSearching();
             if (g_level_filt.SelectedItem.ToString() == "" | g_level_filt.SelectedItem.ToString() == "All" 
             | String.IsNullOrWhiteSpace(g_level_filt.SelectedItem.ToString()))
             {
                 switch (type)
                 {
                     case 1:
-                        a.perform_search("ID", adsearch_txtbox.Text, "");
+                        LNEngine_AdvanceSearch.perform_search("ID", adsearch_txtbox.Text, "");
                         results_lv.Items.Clear();
-                        if (a.dt.Rows.Count > 0)
+                        if (LNEngine_AdvanceSearch.dt.Rows.Count > 0)
                         {
-                            for (int i = 0; i < a.dt.Rows.Count; i++)
+                            for (int i = 0; i < LNEngine_AdvanceSearch.dt.Rows.Count; i++)
                             {
 
-                                DataRow dr = a.dt.Rows[i];
+                                DataRow dr = LNEngine_AdvanceSearch.dt.Rows[i];
                                 ListViewItem fetched_data = new ListViewItem(dr["ID"].ToString());
                                 fetched_data.SubItems.Add(dr["ResourceN"].ToString());
                                 fetched_data.SubItems.Add(dr["Author"].ToString());
@@ -219,14 +178,14 @@ namespace LearNAV
                         }
                         break;
                     case 2:
-                        a.perform_search("Author", adsearch_txtbox.Text, "");
+                        LNEngine_AdvanceSearch.perform_search("Author", adsearch_txtbox.Text, "");
                         results_lv.Items.Clear();
-                        if (a.dt.Rows.Count > 0)
+                        if (LNEngine_AdvanceSearch.dt.Rows.Count > 0)
                         {
-                            for (int i = 0; i < a.dt.Rows.Count; i++)
+                            for (int i = 0; i < LNEngine_AdvanceSearch.dt.Rows.Count; i++)
                             {
 
-                                DataRow dr = a.dt.Rows[i];
+                                DataRow dr = LNEngine_AdvanceSearch.dt.Rows[i];
                                 ListViewItem fetched_data = new ListViewItem(dr["ID"].ToString());
                                 fetched_data.SubItems.Add(dr["ResourceN"].ToString());
                                 fetched_data.SubItems.Add(dr["Author"].ToString());
@@ -241,14 +200,14 @@ namespace LearNAV
                         }
                         break;
                     case 3:
-                        a.perform_search("Tags", adsearch_txtbox.Text, "");
+                        LNEngine_AdvanceSearch.perform_search("Tags", adsearch_txtbox.Text, "");
                         results_lv.Items.Clear();
-                        if (a.dt.Rows.Count > 0)
+                        if (LNEngine_AdvanceSearch.dt.Rows.Count > 0)
                         {
-                            for (int i = 0; i < a.dt.Rows.Count; i++)
+                            for (int i = 0; i < LNEngine_AdvanceSearch.dt.Rows.Count; i++)
                             {
 
-                                DataRow dr = a.dt.Rows[i];
+                                DataRow dr = LNEngine_AdvanceSearch.dt.Rows[i];
                                 ListViewItem fetched_data = new ListViewItem(dr["ID"].ToString());
                                 fetched_data.SubItems.Add(dr["ResourceN"].ToString());
                                 fetched_data.SubItems.Add(dr["Author"].ToString());
@@ -310,18 +269,18 @@ namespace LearNAV
         }
         private void g_level_filtered_comms(string glevel)
         {
-            AdvanceSearching a = new AdvanceSearching();
+            AdvanceSearching LNEngine_AdvanceSearch = new AdvanceSearching();
             switch (type)
             {
                 case 1:
-                    a.perform_search("ID", adsearch_txtbox.Text, glevel);
+                    LNEngine_AdvanceSearch.perform_search("ID", adsearch_txtbox.Text, glevel);
                     results_lv.Items.Clear();
-                    if (a.dt.Rows.Count > 0)
+                    if (LNEngine_AdvanceSearch.dt.Rows.Count > 0)
                     {
-                        for (int i = 0; i < a.dt.Rows.Count; i++)
+                        for (int i = 0; i < LNEngine_AdvanceSearch.dt.Rows.Count; i++)
                         {
 
-                            DataRow dr = a.dt.Rows[i];
+                            DataRow dr = LNEngine_AdvanceSearch.dt.Rows[i];
                             ListViewItem fetched_data = new ListViewItem(dr["ID"].ToString());
                             fetched_data.SubItems.Add(dr["ResourceN"].ToString());
                             fetched_data.SubItems.Add(dr["Author"].ToString());
@@ -335,14 +294,14 @@ namespace LearNAV
                     }
                     break;
                 case 2:
-                    a.perform_search("Author", adsearch_txtbox.Text, glevel);
+                    LNEngine_AdvanceSearch.perform_search("Author", adsearch_txtbox.Text, glevel);
                     results_lv.Items.Clear();
-                    if (a.dt.Rows.Count > 0)
+                    if (LNEngine_AdvanceSearch.dt.Rows.Count > 0)
                     {
-                        for (int i = 0; i < a.dt.Rows.Count; i++)
+                        for (int i = 0; i < LNEngine_AdvanceSearch.dt.Rows.Count; i++)
                         {
 
-                            DataRow dr = a.dt.Rows[i];
+                            DataRow dr = LNEngine_AdvanceSearch.dt.Rows[i];
                             ListViewItem fetched_data = new ListViewItem(dr["ID"].ToString());
                             fetched_data.SubItems.Add(dr["ResourceN"].ToString());
                             fetched_data.SubItems.Add(dr["Author"].ToString());
@@ -357,14 +316,14 @@ namespace LearNAV
                     }
                     break;
                 case 3:
-                    a.perform_search("Tags", adsearch_txtbox.Text, glevel);
+                    LNEngine_AdvanceSearch.perform_search("Tags", adsearch_txtbox.Text, glevel);
                     results_lv.Items.Clear();
-                    if (a.dt.Rows.Count > 0)
+                    if (LNEngine_AdvanceSearch.dt.Rows.Count > 0)
                     {
-                        for (int i = 0; i < a.dt.Rows.Count; i++)
+                        for (int i = 0; i < LNEngine_AdvanceSearch.dt.Rows.Count; i++)
                         {
 
-                            DataRow dr = a.dt.Rows[i];
+                            DataRow dr = LNEngine_AdvanceSearch.dt.Rows[i];
                             ListViewItem fetched_data = new ListViewItem(dr["ID"].ToString());
                             fetched_data.SubItems.Add(dr["ResourceN"].ToString());
                             fetched_data.SubItems.Add(dr["Author"].ToString());
