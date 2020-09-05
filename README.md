@@ -5,12 +5,12 @@
 
 ## Common Variables that are utilized in both Projects:
 
-1.dt - DataTable that stores Data for filtering data from Database
+1. dt - DataTable that stores Data for filtering data from Database
 
-It is created in LearNAV_Engine to store data used by the queries
-The Data are then transfered to the ListView containers in LearNAV to store data
+  It is created in LearNAV_Engine to store data used by the queries
+  The Data are then transfered to the ListView containers in LearNAV to store data
 
-2.Classes for *Advanced Searching*, *Filter* and *LogIn*
+2. Classes for *Advanced Searching*, *Filter* and *LogIn*
 
 ### Contact Devs
 Email - <thenavigator.app15@gmail.com>
