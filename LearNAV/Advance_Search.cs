@@ -33,38 +33,7 @@ namespace LearNAV
 
             }
         }
-        /*
-             private void Load_Data(string comtext)
-             {
-                  results_lv.Items.Clear();
-                        comn.Connection = db_cn;
-                          comn.CommandText = comtext;
-                     if (db_cn.State == ConnectionState.Open)
-                    {
-                        reader = comn.ExecuteReader();
-                        while (reader.Read())
-                        {
-
-
-
-                            ListViewItem dt = new ListViewItem();
-                            string search_var;
-
-
-                            dt.Text = reader.GetValue(0).ToString(); //first column (ID)
-                            search_var = reader.GetValue(1).ToString();
-
-                            dt.SubItems.Add(reader.GetValue(1).ToString()); //second column (Name)
-                            dt.SubItems.Add(reader.GetValue(3).ToString()); //thir column  (Author)
-                            dt.SubItems.Add(reader.GetValue(5).ToString()); //thir column  (Tags)
-                           results_lv.Items.Add(dt);
-                         //   current_cnt.Text = search_results.Items.Count.ToString();
-
-                        }
-                    
-                      }
-             }
-        */
+        
         private void btn_search_ad_Click(object sender, EventArgs e)
         {
         }
