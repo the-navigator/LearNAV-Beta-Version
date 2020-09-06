@@ -69,10 +69,8 @@ namespace LearNAV
                         }
                         else
                         {
-
                             //listBox2.Items.Add(e.FileName);
                             zip.ExtractAll(target_path, ExtractExistingFileAction.OverwriteSilently);
-
                         }
                         // IMPORTANT!! 
                         // Include separate extraction for the Database File
