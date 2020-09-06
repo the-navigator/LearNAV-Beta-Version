@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.MySQL;
+using System.Data.SQLite;
 using LearNAV_Engine;
 using MetroFramework;
 using System.IO;
@@ -22,14 +22,14 @@ namespace LearNAV
 
         DatabaseConnection LNEngine_con = new DatabaseConnection();
         //Database Connection is a class in LearNAV Engine. Check LearNAV Engine to edit function.
-        static string connection_string = ConfigurationManager.ConnectionStrings["[NULL]"].ConnectionString; //Datbase is yet to be finished
+        static string connection_string = "DataSource=" + Environment.CurrentDirectory + "\\LEARNAV.DB;Version=3"; //Datbase is yet to be finished
        /* GLOBAL VARIABLES */
        /*  ----------------------------------------------- */
-        MySQLConnection db_cn = new MySQLConnection(connection_string);
-        MySQLDataReader reader = null; 
-        MySQLCommand list_Con = new MySQLCommand();
-        MySQLCommand comn = new MySQLCommand();
-        MySQLDataAdapter da = new MySQLDataAdapter();
+        SQLiteConnection db_cn = new SQLiteConnection(connection_string);
+        SQLiteDataReader reader = null; 
+        SQLiteCommand list_Con = new SQLiteCommand();
+        SQLiteCommand comn = new SQLiteCommand();
+        SQLiteDataAdapter da = new SQLiteDataAdapter();
         DataTable dt = new DataTable();
         ListViewItem selected_to_open = new ListViewItem();
 
@@ -179,7 +179,7 @@ namespace LearNAV
                 System.Diagnostics.Process.Start(item_r_path);
             }
             catch (Exception e)
-            {}
+            {
                 DialogResult result = MessageBox.Show("Resource not found, extract resources from a file?", "Error!", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation);
                 if (result == DialogResult.OK)
                 {
@@ -189,6 +189,7 @@ namespace LearNAV
                 }
             }
         }
+
 
         private void bunifuFlatButton2_Click(object sender, EventArgs e)
         {
