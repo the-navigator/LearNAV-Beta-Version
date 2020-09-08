@@ -139,6 +139,7 @@ namespace LearNAV
             {
                 MessageBox.Show("Please select search category", "Error",
                     MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                
             }
             else
             {

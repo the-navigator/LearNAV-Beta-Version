@@ -24,4 +24,6 @@ C:\Users\hp\Documents\Visual Studio 2012\Projects\LearNAV\LearNAV\bin\Debug\Metr
 C:\Users\hp\Documents\Visual Studio 2012\Projects\LearNAV\LearNAV\obj\Debug\LearNAV.Extract.resources
 C:\Users\hp\Documents\Visual Studio 2012\Projects\LearNAV\LearNAV\bin\Debug\System.Data.SQLite.dll
 C:\Users\hp\Documents\Visual Studio 2012\Projects\LearNAV\LearNAV\bin\Debug\System.Data.SQLite.xml
-C:\Users\hp\Documents\Visual Studio 2012\Projects\LearNAV\LearNAV\obj\Debug\LearNAV.csprojResolveAssemblyReference.cache
+C:\Users\hp\Documents\Visual Studio 2012\Projects\LearNAV\LearNAV\obj\Debug\LearNAV.PDF_Viewer.resources
+C:\Users\hp\Documents\Visual Studio 2012\Projects\LearNAV\LearNAV\obj\Debug\LearNAV.SANDBOX.resources
+C:\Users\hp\Documents\Visual Studio 2012\Projects\LearNAV\LearNAV\bin\Debug\Guna.UI2.dll

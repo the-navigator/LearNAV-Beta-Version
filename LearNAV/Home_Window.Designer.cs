@@ -28,32 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.search_results = new System.Windows.Forms.ListView();
             this.ID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.search_string_txtbox = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.label1 = new System.Windows.Forms.Label();
-            this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuFlatButton2 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.current_cnt = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.all_cnt = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.bunifuFlatButton3 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
             this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btn_acs = new MaterialSkin.Controls.MaterialFlatButton();
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.search_box = new Guna.UI2.WinForms.Guna2TextBox();
+            this.frm_elipse = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.txtbox_elipse = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btn_accs = new Guna.UI2.WinForms.Guna2Button();
+            this.bttnacess = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.btn_chck_rsc_Data = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_query = new Guna.UI2.WinForms.Guna2Button();
+            this.btn2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // search_results
@@ -88,178 +92,32 @@
             this.columnHeader3.Text = "Resource";
             this.columnHeader3.Width = 180;
             // 
-            // search_string_txtbox
-            // 
-            this.search_string_txtbox.BorderColorFocused = System.Drawing.Color.Blue;
-            this.search_string_txtbox.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.search_string_txtbox.BorderColorMouseHover = System.Drawing.Color.Blue;
-            this.search_string_txtbox.BorderThickness = 3;
-            this.search_string_txtbox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.search_string_txtbox.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.search_string_txtbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(76)))), ((int)(((byte)(83)))));
-            this.search_string_txtbox.isPassword = false;
-            this.search_string_txtbox.Location = new System.Drawing.Point(72, 56);
-            this.search_string_txtbox.Margin = new System.Windows.Forms.Padding(4);
-            this.search_string_txtbox.Name = "search_string_txtbox";
-            this.search_string_txtbox.Size = new System.Drawing.Size(433, 31);
-            this.search_string_txtbox.TabIndex = 6;
-            this.search_string_txtbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.search_string_txtbox.OnValueChanged += new System.EventHandler(this.search_string_txtbox_OnValueChanged_1);
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(512, 60);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(25, 21);
             this.label1.TabIndex = 7;
             this.label1.Text = "or";
             // 
-            // bunifuFlatButton1
-            // 
-            this.bunifuFlatButton1.Activecolor = System.Drawing.Color.White;
-            this.bunifuFlatButton1.BackColor = System.Drawing.Color.White;
-            this.bunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuFlatButton1.BorderRadius = 0;
-            this.bunifuFlatButton1.ButtonText = "Open All Resources";
-            this.bunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuFlatButton1.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton1.Iconimage = null;
-            this.bunifuFlatButton1.Iconimage_right = null;
-            this.bunifuFlatButton1.Iconimage_right_Selected = null;
-            this.bunifuFlatButton1.Iconimage_Selected = null;
-            this.bunifuFlatButton1.IconMarginLeft = 0;
-            this.bunifuFlatButton1.IconMarginRight = 0;
-            this.bunifuFlatButton1.IconRightVisible = true;
-            this.bunifuFlatButton1.IconRightZoom = 0D;
-            this.bunifuFlatButton1.IconVisible = true;
-            this.bunifuFlatButton1.IconZoom = 90D;
-            this.bunifuFlatButton1.IsTab = false;
-            this.bunifuFlatButton1.Location = new System.Drawing.Point(57, 221);
-            this.bunifuFlatButton1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.bunifuFlatButton1.Name = "bunifuFlatButton1";
-            this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.White;
-            this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.White;
-            this.bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(201)))), ((int)(((byte)(170)))));
-            this.bunifuFlatButton1.selected = false;
-            this.bunifuFlatButton1.Size = new System.Drawing.Size(205, 49);
-            this.bunifuFlatButton1.TabIndex = 10;
-            this.bunifuFlatButton1.Text = "Open All Resources";
-            this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuFlatButton1.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(201)))), ((int)(((byte)(170)))));
-            this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuFlatButton1.Click += new System.EventHandler(this.bunifuFlatButton1_Click);
-            // 
-            // bunifuFlatButton2
-            // 
-            this.bunifuFlatButton2.Activecolor = System.Drawing.Color.White;
-            this.bunifuFlatButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(201)))), ((int)(((byte)(170)))));
-            this.bunifuFlatButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuFlatButton2.BorderRadius = 0;
-            this.bunifuFlatButton2.ButtonText = "Access Resource";
-            this.bunifuFlatButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuFlatButton2.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuFlatButton2.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton2.Iconimage = null;
-            this.bunifuFlatButton2.Iconimage_right = null;
-            this.bunifuFlatButton2.Iconimage_right_Selected = null;
-            this.bunifuFlatButton2.Iconimage_Selected = null;
-            this.bunifuFlatButton2.IconMarginLeft = 0;
-            this.bunifuFlatButton2.IconMarginRight = 0;
-            this.bunifuFlatButton2.IconRightVisible = true;
-            this.bunifuFlatButton2.IconRightZoom = 0D;
-            this.bunifuFlatButton2.IconVisible = true;
-            this.bunifuFlatButton2.IconZoom = 90D;
-            this.bunifuFlatButton2.IsTab = false;
-            this.bunifuFlatButton2.Location = new System.Drawing.Point(322, 278);
-            this.bunifuFlatButton2.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.bunifuFlatButton2.Name = "bunifuFlatButton2";
-            this.bunifuFlatButton2.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(201)))), ((int)(((byte)(170)))));
-            this.bunifuFlatButton2.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(201)))), ((int)(((byte)(170)))));
-            this.bunifuFlatButton2.OnHoverTextColor = System.Drawing.Color.White;
-            this.bunifuFlatButton2.selected = false;
-            this.bunifuFlatButton2.Size = new System.Drawing.Size(183, 42);
-            this.bunifuFlatButton2.TabIndex = 11;
-            this.bunifuFlatButton2.Text = "Access Resource";
-            this.bunifuFlatButton2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuFlatButton2.Textcolor = System.Drawing.Color.White;
-            this.bunifuFlatButton2.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuFlatButton2.Visible = false;
-            this.bunifuFlatButton2.Click += new System.EventHandler(this.bunifuFlatButton2_Click);
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label2.Location = new System.Drawing.Point(24, 323);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(124, 21);
             this.label2.TabIndex = 12;
             this.label2.Text = "Search Results:";
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(234, 580);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(56, 21);
-            this.label3.TabIndex = 13;
-            this.label3.Text = "out of";
-            this.label3.Visible = false;
-            // 
-            // current_cnt
-            // 
-            this.current_cnt.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.current_cnt.Enabled = false;
-            this.current_cnt.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.current_cnt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.current_cnt.HintForeColor = System.Drawing.Color.Empty;
-            this.current_cnt.HintText = "";
-            this.current_cnt.isPassword = false;
-            this.current_cnt.LineFocusedColor = System.Drawing.Color.Blue;
-            this.current_cnt.LineIdleColor = System.Drawing.Color.Gray;
-            this.current_cnt.LineMouseHoverColor = System.Drawing.Color.Blue;
-            this.current_cnt.LineThickness = 3;
-            this.current_cnt.Location = new System.Drawing.Point(177, 568);
-            this.current_cnt.Margin = new System.Windows.Forms.Padding(4);
-            this.current_cnt.Name = "current_cnt";
-            this.current_cnt.Size = new System.Drawing.Size(50, 33);
-            this.current_cnt.TabIndex = 14;
-            this.current_cnt.Text = "0";
-            this.current_cnt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.current_cnt.Visible = false;
-            // 
-            // all_cnt
-            // 
-            this.all_cnt.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.all_cnt.Enabled = false;
-            this.all_cnt.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.all_cnt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.all_cnt.HintForeColor = System.Drawing.Color.Empty;
-            this.all_cnt.HintText = "";
-            this.all_cnt.isPassword = false;
-            this.all_cnt.LineFocusedColor = System.Drawing.Color.Blue;
-            this.all_cnt.LineIdleColor = System.Drawing.Color.Gray;
-            this.all_cnt.LineMouseHoverColor = System.Drawing.Color.Blue;
-            this.all_cnt.LineThickness = 3;
-            this.all_cnt.Location = new System.Drawing.Point(297, 568);
-            this.all_cnt.Margin = new System.Windows.Forms.Padding(4);
-            this.all_cnt.Name = "all_cnt";
-            this.all_cnt.Size = new System.Drawing.Size(50, 33);
-            this.all_cnt.TabIndex = 15;
-            this.all_cnt.Text = "0";
-            this.all_cnt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.all_cnt.Visible = false;
-            // 
             // bunifuFlatButton3
             // 
             this.bunifuFlatButton3.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton3.BackColor = System.Drawing.Color.White;
+            this.bunifuFlatButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(51)))), ((int)(((byte)(68)))));
             this.bunifuFlatButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuFlatButton3.BorderRadius = 0;
             this.bunifuFlatButton3.ButtonText = "Advance Search";
@@ -292,22 +150,11 @@
             this.bunifuFlatButton3.TextFont = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuFlatButton3.Click += new System.EventHandler(this.bunifuFlatButton3_Click);
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Corbel", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(455, 563);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(87, 13);
-            this.label4.TabIndex = 17;
-            this.label4.Text = "Database Version:";
-            this.label4.Visible = false;
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(76)))), ((int)(((byte)(83)))));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(205)))), ((int)(((byte)(185)))));
             this.label5.Location = new System.Drawing.Point(23, 18);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(168, 28);
@@ -316,12 +163,12 @@
             // 
             // shapeContainer1
             // 
-            this.shapeContainer1.Location = new System.Drawing.Point(20, 60);
+            this.shapeContainer1.Location = new System.Drawing.Point(0, 0);
             this.shapeContainer1.Margin = new System.Windows.Forms.Padding(0);
             this.shapeContainer1.Name = "shapeContainer1";
             this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
             this.lineShape1});
-            this.shapeContainer1.Size = new System.Drawing.Size(802, 554);
+            this.shapeContainer1.Size = new System.Drawing.Size(842, 634);
             this.shapeContainer1.TabIndex = 21;
             this.shapeContainer1.TabStop = false;
             // 
@@ -345,17 +192,6 @@
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 25;
             this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::LearNAV.Properties.Resources.menu;
-            this.pictureBox1.Location = new System.Drawing.Point(28, 55);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(37, 32);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 24;
-            this.pictureBox1.TabStop = false;
             // 
             // pictureBox3
             // 
@@ -385,7 +221,7 @@
             this.btn_acs.Depth = 0;
             this.btn_acs.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_acs.Icon = null;
-            this.btn_acs.Location = new System.Drawing.Point(685, 580);
+            this.btn_acs.Location = new System.Drawing.Point(47, 583);
             this.btn_acs.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btn_acs.MouseState = MaterialSkin.MouseState.HOVER;
             this.btn_acs.Name = "btn_acs";
@@ -396,38 +232,161 @@
             this.btn_acs.UseVisualStyleBackColor = true;
             this.btn_acs.Click += new System.EventHandler(this.btn_acs_Click);
             // 
+            // guna2Panel1
+            // 
+            this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(51)))), ((int)(((byte)(68)))));
+            this.guna2Panel1.Controls.Add(this.btn_query);
+            this.guna2Panel1.Controls.Add(this.btn_chck_rsc_Data);
+            this.guna2Panel1.Controls.Add(this.btn_accs);
+            this.guna2Panel1.Controls.Add(this.btn_acs);
+            this.guna2Panel1.Controls.Add(this.guna2GradientButton1);
+            this.guna2Panel1.Controls.Add(this.search_box);
+            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.Padding = new System.Windows.Forms.Padding(5);
+            this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
+            this.guna2Panel1.Size = new System.Drawing.Size(842, 634);
+            this.guna2Panel1.TabIndex = 27;
+            // 
+            // search_box
+            // 
+            this.search_box.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.search_box.DefaultText = "";
+            this.search_box.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.search_box.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.search_box.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.search_box.DisabledState.Parent = this.search_box;
+            this.search_box.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.search_box.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.search_box.FocusedState.Parent = this.search_box;
+            this.search_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.search_box.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.search_box.HoverState.Parent = this.search_box;
+            this.search_box.Location = new System.Drawing.Point(28, 55);
+            this.search_box.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.search_box.Name = "search_box";
+            this.search_box.PasswordChar = '\0';
+            this.search_box.PlaceholderText = "";
+            this.search_box.SelectedText = "";
+            this.search_box.ShadowDecoration.Parent = this.search_box;
+            this.search_box.Size = new System.Drawing.Size(477, 32);
+            this.search_box.TabIndex = 7;
+            this.search_box.TextChanged += new System.EventHandler(this.search_box_TextChanged);
+            // 
+            // frm_elipse
+            // 
+            this.frm_elipse.BorderRadius = 19;
+            this.frm_elipse.TargetControl = this;
+            // 
+            // txtbox_elipse
+            // 
+            this.txtbox_elipse.BorderRadius = 30;
+            this.txtbox_elipse.TargetControl = this.search_box;
+            // 
+            // guna2GradientButton1
+            // 
+            this.guna2GradientButton1.CheckedState.Parent = this.guna2GradientButton1;
+            this.guna2GradientButton1.CustomImages.Parent = this.guna2GradientButton1;
+            this.guna2GradientButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2GradientButton1.ForeColor = System.Drawing.Color.White;
+            this.guna2GradientButton1.HoverState.Parent = this.guna2GradientButton1;
+            this.guna2GradientButton1.Location = new System.Drawing.Point(297, 535);
+            this.guna2GradientButton1.Name = "guna2GradientButton1";
+            this.guna2GradientButton1.ShadowDecoration.Parent = this.guna2GradientButton1;
+            this.guna2GradientButton1.Size = new System.Drawing.Size(180, 45);
+            this.guna2GradientButton1.TabIndex = 28;
+            this.guna2GradientButton1.Text = "guna2GradientButton1";
+            // 
+            // btn_accs
+            // 
+            this.btn_accs.CheckedState.Parent = this.btn_accs;
+            this.btn_accs.CustomImages.Parent = this.btn_accs;
+            this.btn_accs.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(205)))), ((int)(((byte)(185)))));
+            this.btn_accs.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_accs.ForeColor = System.Drawing.Color.White;
+            this.btn_accs.HoverState.Parent = this.btn_accs;
+            this.btn_accs.Location = new System.Drawing.Point(649, 571);
+            this.btn_accs.Name = "btn_accs";
+            this.btn_accs.Padding = new System.Windows.Forms.Padding(15);
+            this.btn_accs.ShadowDecoration.Parent = this.btn_accs;
+            this.btn_accs.Size = new System.Drawing.Size(180, 45);
+            this.btn_accs.TabIndex = 28;
+            this.btn_accs.Text = "Access Resource";
+            // 
+            // bttnacess
+            // 
+            this.bttnacess.BorderRadius = 17;
+            this.bttnacess.TargetControl = this.btn_accs;
+            // 
+            // btn_chck_rsc_Data
+            // 
+            this.btn_chck_rsc_Data.CheckedState.Parent = this.btn_chck_rsc_Data;
+            this.btn_chck_rsc_Data.CustomImages.Parent = this.btn_chck_rsc_Data;
+            this.btn_chck_rsc_Data.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(108)))), ((int)(((byte)(83)))));
+            this.btn_chck_rsc_Data.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_chck_rsc_Data.ForeColor = System.Drawing.Color.White;
+            this.btn_chck_rsc_Data.HoverState.Parent = this.btn_chck_rsc_Data;
+            this.btn_chck_rsc_Data.Location = new System.Drawing.Point(463, 571);
+            this.btn_chck_rsc_Data.Name = "btn_chck_rsc_Data";
+            this.btn_chck_rsc_Data.Padding = new System.Windows.Forms.Padding(15);
+            this.btn_chck_rsc_Data.ShadowDecoration.Parent = this.btn_chck_rsc_Data;
+            this.btn_chck_rsc_Data.Size = new System.Drawing.Size(180, 45);
+            this.btn_chck_rsc_Data.TabIndex = 29;
+            this.btn_chck_rsc_Data.Text = "Check Resource Data";
+            // 
+            // btn_query
+            // 
+            this.btn_query.CheckedState.Parent = this.btn_query;
+            this.btn_query.CustomImages.Parent = this.btn_query;
+            this.btn_query.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(200)))), ((int)(((byte)(222)))));
+            this.btn_query.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_query.ForeColor = System.Drawing.Color.White;
+            this.btn_query.HoverState.Parent = this.btn_query;
+            this.btn_query.Location = new System.Drawing.Point(28, 571);
+            this.btn_query.Name = "btn_query";
+            this.btn_query.Padding = new System.Windows.Forms.Padding(15);
+            this.btn_query.ShadowDecoration.Parent = this.btn_query;
+            this.btn_query.Size = new System.Drawing.Size(88, 32);
+            this.btn_query.TabIndex = 30;
+            this.btn_query.Text = "Query";
+            // 
+            // btn2
+            // 
+            this.btn2.BorderRadius = 17;
+            this.btn2.TargetControl = this.btn_chck_rsc_Data;
+            // 
+            // guna2Elipse2
+            // 
+            this.guna2Elipse2.BorderRadius = 17;
+            this.guna2Elipse2.TargetControl = this.btn_query;
+            // 
             // Home_Window
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(51)))), ((int)(((byte)(68)))));
             this.ClientSize = new System.Drawing.Size(842, 634);
-            this.Controls.Add(this.btn_acs);
             this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.all_cnt);
-            this.Controls.Add(this.current_cnt);
-            this.Controls.Add(this.bunifuFlatButton2);
-            this.Controls.Add(this.bunifuFlatButton1);
             this.Controls.Add(this.bunifuFlatButton3);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.search_string_txtbox);
             this.Controls.Add(this.search_results);
             this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.shapeContainer1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.Name = "Home_Window";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
-            this.Style = MetroFramework.MetroColorStyle.Teal;
             this.Load += new System.EventHandler(this.Home_Window_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.guna2Panel1.ResumeLayout(false);
+            this.guna2Panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -439,24 +398,27 @@
         private System.Windows.Forms.ColumnHeader ID;
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnHeader3;
-        private Bunifu.Framework.UI.BunifuMetroTextbox search_string_txtbox;
         private System.Windows.Forms.Label label1;
-        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
-        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton2;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox current_cnt;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox all_cnt;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton3;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label5;
         private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape1;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox4;
         private MaterialSkin.Controls.MaterialFlatButton btn_acs;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private Guna.UI2.WinForms.Guna2Elipse frm_elipse;
+        private Guna.UI2.WinForms.Guna2Elipse txtbox_elipse;
+        private Guna.UI2.WinForms.Guna2TextBox search_box;
+        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
+        private Guna.UI2.WinForms.Guna2Button btn_accs;
+        private Guna.UI2.WinForms.Guna2Elipse bttnacess;
+        private Guna.UI2.WinForms.Guna2Button btn_query;
+        private Guna.UI2.WinForms.Guna2Button btn_chck_rsc_Data;
+        private Guna.UI2.WinForms.Guna2Elipse btn2;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
 
     }
 }
