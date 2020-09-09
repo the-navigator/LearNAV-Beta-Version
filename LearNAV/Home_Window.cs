@@ -115,8 +115,8 @@ namespace LearNAV
 
         private void bunifuFlatButton1_Click(object sender, EventArgs e)
         {
-            Resource_Viewer frm = new Resource_Viewer();
-            frm.Show();
+           // Resource_Viewer frm = new Resource_Viewer();
+           // frm.Show();
         }
 
         private void bunifuMaterialTextbox1_OnValueChanged(object sender, EventArgs e)
@@ -212,6 +212,11 @@ namespace LearNAV
             {
                 MessageBox.Show(w.Message);
             }
+        }
+
+        private void btn_accs_Click(object sender, EventArgs e)
+        {
+
         }
 
 

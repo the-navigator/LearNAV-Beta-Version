@@ -39,25 +39,25 @@
             this.label5 = new System.Windows.Forms.Label();
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
             this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btn_acs = new MaterialSkin.Controls.MaterialFlatButton();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btn_query = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_chck_rsc_Data = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_accs = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.search_box = new Guna.UI2.WinForms.Guna2TextBox();
             this.frm_elipse = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.txtbox_elipse = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.btn_accs = new Guna.UI2.WinForms.Guna2Button();
             this.bttnacess = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.btn_chck_rsc_Data = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_query = new Guna.UI2.WinForms.Guna2Button();
             this.btn2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // search_results
@@ -117,7 +117,7 @@
             // bunifuFlatButton3
             // 
             this.bunifuFlatButton3.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(51)))), ((int)(((byte)(68)))));
+            this.bunifuFlatButton3.BackColor = System.Drawing.Color.White;
             this.bunifuFlatButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuFlatButton3.BorderRadius = 0;
             this.bunifuFlatButton3.ButtonText = "Advance Search";
@@ -182,38 +182,6 @@
             this.lineShape1.Y1 = 27;
             this.lineShape1.Y2 = -27;
             // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.Image = global::LearNAV.Properties.Resources.settings1;
-            this.pictureBox4.Location = new System.Drawing.Point(733, 56);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(37, 32);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 25;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.Image = global::LearNAV.Properties.Resources.question;
-            this.pictureBox3.Location = new System.Drawing.Point(776, 56);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(37, 32);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 23;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::LearNAV.Properties.Resources.greetfin;
-            this.pictureBox2.Location = new System.Drawing.Point(28, 94);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(801, 226);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 19;
-            this.pictureBox2.TabStop = false;
-            // 
             // btn_acs
             // 
             this.btn_acs.AutoSize = true;
@@ -248,6 +216,69 @@
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(842, 634);
             this.guna2Panel1.TabIndex = 27;
+            // 
+            // btn_query
+            // 
+            this.btn_query.CheckedState.Parent = this.btn_query;
+            this.btn_query.CustomImages.Parent = this.btn_query;
+            this.btn_query.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(200)))), ((int)(((byte)(222)))));
+            this.btn_query.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_query.ForeColor = System.Drawing.Color.White;
+            this.btn_query.HoverState.Parent = this.btn_query;
+            this.btn_query.Location = new System.Drawing.Point(28, 571);
+            this.btn_query.Name = "btn_query";
+            this.btn_query.Padding = new System.Windows.Forms.Padding(15);
+            this.btn_query.ShadowDecoration.Parent = this.btn_query;
+            this.btn_query.Size = new System.Drawing.Size(88, 32);
+            this.btn_query.TabIndex = 30;
+            this.btn_query.Text = "Query";
+            // 
+            // btn_chck_rsc_Data
+            // 
+            this.btn_chck_rsc_Data.CheckedState.Parent = this.btn_chck_rsc_Data;
+            this.btn_chck_rsc_Data.CustomImages.Parent = this.btn_chck_rsc_Data;
+            this.btn_chck_rsc_Data.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(108)))), ((int)(((byte)(83)))));
+            this.btn_chck_rsc_Data.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_chck_rsc_Data.ForeColor = System.Drawing.Color.White;
+            this.btn_chck_rsc_Data.HoverState.Parent = this.btn_chck_rsc_Data;
+            this.btn_chck_rsc_Data.Location = new System.Drawing.Point(463, 571);
+            this.btn_chck_rsc_Data.Name = "btn_chck_rsc_Data";
+            this.btn_chck_rsc_Data.Padding = new System.Windows.Forms.Padding(15);
+            this.btn_chck_rsc_Data.ShadowDecoration.Parent = this.btn_chck_rsc_Data;
+            this.btn_chck_rsc_Data.Size = new System.Drawing.Size(180, 45);
+            this.btn_chck_rsc_Data.TabIndex = 29;
+            this.btn_chck_rsc_Data.Text = "Check Resource Data";
+            // 
+            // btn_accs
+            // 
+            this.btn_accs.CheckedState.Parent = this.btn_accs;
+            this.btn_accs.CustomImages.Parent = this.btn_accs;
+            this.btn_accs.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(205)))), ((int)(((byte)(185)))));
+            this.btn_accs.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_accs.ForeColor = System.Drawing.Color.White;
+            this.btn_accs.HoverState.Parent = this.btn_accs;
+            this.btn_accs.Location = new System.Drawing.Point(649, 571);
+            this.btn_accs.Name = "btn_accs";
+            this.btn_accs.Padding = new System.Windows.Forms.Padding(15);
+            this.btn_accs.ShadowDecoration.Parent = this.btn_accs;
+            this.btn_accs.Size = new System.Drawing.Size(180, 45);
+            this.btn_accs.TabIndex = 28;
+            this.btn_accs.Text = "Access Resource";
+            this.btn_accs.Click += new System.EventHandler(this.btn_accs_Click);
+            // 
+            // guna2GradientButton1
+            // 
+            this.guna2GradientButton1.CheckedState.Parent = this.guna2GradientButton1;
+            this.guna2GradientButton1.CustomImages.Parent = this.guna2GradientButton1;
+            this.guna2GradientButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2GradientButton1.ForeColor = System.Drawing.Color.White;
+            this.guna2GradientButton1.HoverState.Parent = this.guna2GradientButton1;
+            this.guna2GradientButton1.Location = new System.Drawing.Point(297, 535);
+            this.guna2GradientButton1.Name = "guna2GradientButton1";
+            this.guna2GradientButton1.ShadowDecoration.Parent = this.guna2GradientButton1;
+            this.guna2GradientButton1.Size = new System.Drawing.Size(180, 45);
+            this.guna2GradientButton1.TabIndex = 28;
+            this.guna2GradientButton1.Text = "guna2GradientButton1";
             // 
             // search_box
             // 
@@ -284,72 +315,10 @@
             this.txtbox_elipse.BorderRadius = 30;
             this.txtbox_elipse.TargetControl = this.search_box;
             // 
-            // guna2GradientButton1
-            // 
-            this.guna2GradientButton1.CheckedState.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.CustomImages.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2GradientButton1.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton1.HoverState.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.Location = new System.Drawing.Point(297, 535);
-            this.guna2GradientButton1.Name = "guna2GradientButton1";
-            this.guna2GradientButton1.ShadowDecoration.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.Size = new System.Drawing.Size(180, 45);
-            this.guna2GradientButton1.TabIndex = 28;
-            this.guna2GradientButton1.Text = "guna2GradientButton1";
-            // 
-            // btn_accs
-            // 
-            this.btn_accs.CheckedState.Parent = this.btn_accs;
-            this.btn_accs.CustomImages.Parent = this.btn_accs;
-            this.btn_accs.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(205)))), ((int)(((byte)(185)))));
-            this.btn_accs.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_accs.ForeColor = System.Drawing.Color.White;
-            this.btn_accs.HoverState.Parent = this.btn_accs;
-            this.btn_accs.Location = new System.Drawing.Point(649, 571);
-            this.btn_accs.Name = "btn_accs";
-            this.btn_accs.Padding = new System.Windows.Forms.Padding(15);
-            this.btn_accs.ShadowDecoration.Parent = this.btn_accs;
-            this.btn_accs.Size = new System.Drawing.Size(180, 45);
-            this.btn_accs.TabIndex = 28;
-            this.btn_accs.Text = "Access Resource";
-            // 
             // bttnacess
             // 
             this.bttnacess.BorderRadius = 17;
             this.bttnacess.TargetControl = this.btn_accs;
-            // 
-            // btn_chck_rsc_Data
-            // 
-            this.btn_chck_rsc_Data.CheckedState.Parent = this.btn_chck_rsc_Data;
-            this.btn_chck_rsc_Data.CustomImages.Parent = this.btn_chck_rsc_Data;
-            this.btn_chck_rsc_Data.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(108)))), ((int)(((byte)(83)))));
-            this.btn_chck_rsc_Data.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_chck_rsc_Data.ForeColor = System.Drawing.Color.White;
-            this.btn_chck_rsc_Data.HoverState.Parent = this.btn_chck_rsc_Data;
-            this.btn_chck_rsc_Data.Location = new System.Drawing.Point(463, 571);
-            this.btn_chck_rsc_Data.Name = "btn_chck_rsc_Data";
-            this.btn_chck_rsc_Data.Padding = new System.Windows.Forms.Padding(15);
-            this.btn_chck_rsc_Data.ShadowDecoration.Parent = this.btn_chck_rsc_Data;
-            this.btn_chck_rsc_Data.Size = new System.Drawing.Size(180, 45);
-            this.btn_chck_rsc_Data.TabIndex = 29;
-            this.btn_chck_rsc_Data.Text = "Check Resource Data";
-            // 
-            // btn_query
-            // 
-            this.btn_query.CheckedState.Parent = this.btn_query;
-            this.btn_query.CustomImages.Parent = this.btn_query;
-            this.btn_query.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(200)))), ((int)(((byte)(222)))));
-            this.btn_query.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_query.ForeColor = System.Drawing.Color.White;
-            this.btn_query.HoverState.Parent = this.btn_query;
-            this.btn_query.Location = new System.Drawing.Point(28, 571);
-            this.btn_query.Name = "btn_query";
-            this.btn_query.Padding = new System.Windows.Forms.Padding(15);
-            this.btn_query.ShadowDecoration.Parent = this.btn_query;
-            this.btn_query.Size = new System.Drawing.Size(88, 32);
-            this.btn_query.TabIndex = 30;
-            this.btn_query.Text = "Query";
             // 
             // btn2
             // 
@@ -360,6 +329,39 @@
             // 
             this.guna2Elipse2.BorderRadius = 17;
             this.guna2Elipse2.TargetControl = this.btn_query;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox4.Image = global::LearNAV.Properties.Resources.settings1;
+            
+            this.pictureBox4.Location = new System.Drawing.Point(733, 56);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(37, 32);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 25;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.Image = global::LearNAV.Properties.Resources.question;
+            this.pictureBox3.Location = new System.Drawing.Point(776, 56);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(37, 32);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 23;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::LearNAV.Properties.Resources.greetfin;
+            this.pictureBox2.Location = new System.Drawing.Point(28, 94);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(801, 226);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 19;
+            this.pictureBox2.TabStop = false;
             // 
             // Home_Window
             // 
@@ -382,11 +384,11 @@
             this.Name = "Home_Window";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Load += new System.EventHandler(this.Home_Window_Load);
+            this.guna2Panel1.ResumeLayout(false);
+            this.guna2Panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.guna2Panel1.ResumeLayout(false);
-            this.guna2Panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

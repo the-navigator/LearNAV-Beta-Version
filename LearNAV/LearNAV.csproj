@@ -117,6 +117,12 @@
     <Compile Include="Advance_Search.Designer.cs">
       <DependentUpon>Advance_Search.cs</DependentUpon>
     </Compile>
+    <Compile Include="Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="Extract.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -155,26 +161,17 @@
     <Compile Include="Resource_Extract_Tool.Designer.cs">
       <DependentUpon>Resource_Extract_Tool.cs</DependentUpon>
     </Compile>
-    <Compile Include="Resource_Viewer.cs">
+    <Compile Include="Libre_SHELF.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Resource_Viewer.Designer.cs">
-      <DependentUpon>Resource_Viewer.cs</DependentUpon>
-    </Compile>
-    <Compile Include="SANDBOX.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SANDBOX.Designer.cs">
-      <DependentUpon>SANDBOX.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserResources.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UserResources.Designer.cs">
-      <DependentUpon>UserResources.cs</DependentUpon>
+    <Compile Include="Libre_SHELF.Designer.cs">
+      <DependentUpon>Libre_SHELF.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Advance_Search.resx">
       <DependentUpon>Advance_Search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Extract.resx">
       <DependentUpon>Extract.cs</DependentUpon>
@@ -204,14 +201,8 @@
     <EmbeddedResource Include="Resource_Extract_Tool.resx">
       <DependentUpon>Resource_Extract_Tool.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Resource_Viewer.resx">
-      <DependentUpon>Resource_Viewer.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SANDBOX.resx">
-      <DependentUpon>SANDBOX.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserResources.resx">
-      <DependentUpon>UserResources.cs</DependentUpon>
+    <EmbeddedResource Include="Libre_SHELF.resx">
+      <DependentUpon>Libre_SHELF.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -262,6 +253,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="logo-ico.ico" />
+    <None Include="Resources\srch.png" />
     <None Include="Resources\settings1.png" />
     <None Include="Resources\menu.png" />
     <None Include="Resources\settings.png" />
