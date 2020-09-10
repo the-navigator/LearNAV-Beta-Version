@@ -16,7 +16,7 @@ namespace LearNAV
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Home_Window());
+            Application.Run(new Dashboard());
         }
     }
 }

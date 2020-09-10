@@ -16,7 +16,7 @@ using System.IO;
 
 namespace LearNAV
 {
-    public partial class Home_Window : MetroFramework.Forms.MetroForm
+    public partial class Home_Window : Form
     {
 
 
@@ -48,7 +48,7 @@ namespace LearNAV
             search_results.Items.Clear();
             InitialDataLoad();
             TotalNum = search_results.Items.Count.ToString();
-            all_cnt.Text = TotalNum;
+            //all_cnt.Text = TotalNum;
         }
 
         public void LoadData()
@@ -100,8 +100,8 @@ namespace LearNAV
                 this.Hide();
             }
         }
-      
-        private void search_string_txtbox_OnValueChanged(object sender, EventArgs e)
+
+        private void search_string_txtbox_OnValueChanged_1(object sender, EventArgs e)
         {
       
            //insert code here
@@ -115,8 +115,8 @@ namespace LearNAV
 
         private void bunifuFlatButton1_Click(object sender, EventArgs e)
         {
-            Resource_Viewer frm = new Resource_Viewer();
-            frm.Show();
+           // Resource_Viewer frm = new Resource_Viewer();
+           // frm.Show();
         }
 
         private void bunifuMaterialTextbox1_OnValueChanged(object sender, EventArgs e)
@@ -135,39 +135,9 @@ namespace LearNAV
           
         }
 
-        private void search_string_txtbox_OnValueChanged_1(object sender, EventArgs e)
+        private void search_box_OnValueChanged_1(object sender, EventArgs e)
         {
-            try
-            {
-                Filter f = new Filter(); //Filter is a LearNAV Engine Class.
-                search_results.Items.Clear();
-                f.FilterName(search_string_txtbox.Text);
-             
-
-                if (f.dt.Rows.Count > 0)
-                {
-                    for (int i = 0; i < f.dt.Rows.Count; i++)
-                    {
-
-                        DataRow dr = f.dt.Rows[i];
-                        ListViewItem fetched_data = new ListViewItem(dr["ID"].ToString());
-                        fetched_data.SubItems.Add(dr["ResourceN"].ToString());
-                        fetched_data.SubItems.Add(dr["ResourceLoc"].ToString());
-                        search_results.Items.Add(fetched_data);
-                     
-
-                        
-                    }
-                }
-               else
-                    MessageBox.Show("Unable to perform Search Query"  , "Database Connection Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
-
-            }
-            catch (Exception w)
-            {
-                MessageBox.Show(w.Message);
-            }
+           //NULL NOW
 
         }
 
@@ -207,6 +177,46 @@ namespace LearNAV
         {
             selected_to_open = search_results.SelectedItems[0];
             OpenResourceSelected(Environment.CurrentDirectory + "\\ResourceFiles\\" + selected_to_open.SubItems[2].Text);
+        }
+
+        private void search_box_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                Filter f = new Filter(); //Filter is a LearNAV Engine Class.
+                search_results.Items.Clear();
+                f.FilterName(search_box.Text);
+
+
+                if (f.dt.Rows.Count > 0)
+                {
+                    for (int i = 0; i < f.dt.Rows.Count; i++)
+                    {
+
+                        DataRow dr = f.dt.Rows[i];
+                        ListViewItem fetched_data = new ListViewItem(dr["ID"].ToString());
+                        fetched_data.SubItems.Add(dr["ResourceN"].ToString());
+                        fetched_data.SubItems.Add(dr["ResourceLoc"].ToString());
+                        search_results.Items.Add(fetched_data);
+
+
+
+                    }
+                }
+                else
+                    MessageBox.Show("Unable to perform Search Query", "Database Connection Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+
+            }
+            catch (Exception w)
+            {
+                MessageBox.Show(w.Message);
+            }
+        }
+
+        private void btn_accs_Click(object sender, EventArgs e)
+        {
+
         }
 
 
