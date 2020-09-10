@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -45,12 +45,14 @@ namespace LearNAV
             extract_bg.DoWork += new DoWorkEventHandler(extract_bg_DoWork);
             path_extrct = txt_file.Text;
             extract_bg.RunWorkerAsync();
-
+            
         }
 
         private void btn_begin_Click(object sender, EventArgs e)
         {
             extract_bg.RunWorkerAsync();
+            
+
         }
         public void Extract_Files()
         {

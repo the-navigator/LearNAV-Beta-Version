@@ -164,6 +164,12 @@
     <Compile Include="UserResources.Designer.cs">
       <DependentUpon>UserResources.cs</DependentUpon>
     </Compile>
+    <Compile Include="Resource_Item.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Resource_Item.Designer.cs">
+      <DependentUpon>Resource_Item.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Advance_Search.resx">
       <DependentUpon>Advance_Search.cs</DependentUpon>
     </EmbeddedResource>
@@ -197,6 +203,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserResources.resx">
       <DependentUpon>UserResources.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource_Item.resx">
+      <DependentUpon>Resource_Item.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
