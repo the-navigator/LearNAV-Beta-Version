@@ -24,4 +24,8 @@ C:\Users\hp\Documents\Visual Studio 2012\Projects\LearNAV\LearNAV\bin\Debug\Metr
 C:\Users\hp\Documents\Visual Studio 2012\Projects\LearNAV\LearNAV\obj\Debug\LearNAV.Extract.resources
 C:\Users\hp\Documents\Visual Studio 2012\Projects\LearNAV\LearNAV\bin\Debug\System.Data.SQLite.dll
 C:\Users\hp\Documents\Visual Studio 2012\Projects\LearNAV\LearNAV\bin\Debug\System.Data.SQLite.xml
+<<<<<<< Updated upstream
 C:\Users\hp\Documents\Visual Studio 2012\Projects\LearNAV\LearNAV\obj\Debug\LearNAV.csprojResolveAssemblyReference.cache
+=======
+C:\Users\hp\Documents\Visual Studio 2012\Projects\LearNAV\LearNAV\obj\Debug\LearNAV.Resource_Item.resources
+>>>>>>> Stashed changes
