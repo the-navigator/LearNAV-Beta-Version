@@ -1,6 +1,6 @@
 ﻿namespace LearNAV
 {
-    partial class Libre_SHELF
+    partial class UserResources
     {
         /// <summary>
         /// Required designer variable.
@@ -30,15 +30,13 @@
         {
             this.SuspendLayout();
             // 
-            // Libre_SHELF
+            // UserResources
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(823, 472);
-            this.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Name = "Libre_SHELF";
-            this.Style = MetroFramework.MetroColorStyle.Teal;
-            this.Text = "Libre SHELF";
+            this.ClientSize = new System.Drawing.Size(314, 323);
+            this.Name = "UserResources";
+            this.Text = "UserResources";
             this.ResumeLayout(false);
 
         }
